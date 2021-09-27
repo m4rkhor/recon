@@ -4,7 +4,8 @@ import sys
 import socket
 from datetime import datetime
 
-# Define the target 
+# Define the target
+target = input("Enter target IP: ")
 if len(sys.argv) == 2:
     target = socket.gethostbyname(sys.argv[1]) #Translate hostname to IPv4
 else:
